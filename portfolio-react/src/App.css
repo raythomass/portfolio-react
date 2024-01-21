@@ -19,6 +19,35 @@
   text-decoration: none;
 }
 
+/* .navigation a:visited {
+  text-decoration: none;
+} */
+
 .navigation a:hover {
   text-decoration: underline;
+}
+
+/* ------  HEADER ------ */
+
+.header {
+  display: flex;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  margin-left: 10rem;
+}
+
+.header-text {
+  line-height: 1rem;
+}
+
+.header-words {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.header-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+  font-weight: 600;
 }
