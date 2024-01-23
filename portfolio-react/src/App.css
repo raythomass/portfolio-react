@@ -15,17 +15,11 @@
   font-weight: 400;
 }
 
-.navigation a {
+.navigation li {
   text-decoration: none;
+  list-style: none;
 }
 
-/* .navigation a:visited {
-  text-decoration: none;
-} */
-
-.navigation a:hover {
-  text-decoration: underline;
-}
 
 /* ------  HEADER ------ */
 
