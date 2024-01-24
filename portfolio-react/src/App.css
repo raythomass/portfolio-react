@@ -50,3 +50,13 @@
 
 
 /* ------  ABOUT ------ */
+
+
+/* ------  PROJECTS ------ */
+#cards {
+  display: flex;
+}
+
+ #card-one {
+  padding: 10px;
+ }
