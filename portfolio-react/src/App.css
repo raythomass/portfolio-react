@@ -55,8 +55,17 @@
 /* ------  PROJECTS ------ */
 #cards {
   display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
- #card-one {
+#card-one {
   padding: 10px;
- }
+}
+
+#card-two {
+  padding: 10px;
+  margin-top: 5%;
+}
