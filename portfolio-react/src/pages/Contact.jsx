@@ -1,22 +1,50 @@
-function Contact() {
-    return(
-        <projects>
-            <h1>Contact Page</h1>
+import { useState } from "react";
 
-            <div className="mb-3 col-4">
-                <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
-                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Enter Name"></input>
-            </div>
-            <div className="mb-3 col-4">
-                <label htmlFor="exampleFormControlInput1" className="form-label">Email Address</label>
-                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
-            </div>
-            <div className="mb-3 col-4">
-                <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="button" className="btn btn-primary">Submit</button>
-        </projects>
+function Contact() {
+    const [insertName, setName] = useState('');
+    const [insertEmail, setEmail] = useState('');
+
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+
+        return name === 'insertName' ? setName(value) : setEmail(value);
+    };
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+        alert(`Hello ${insertName} from ${insertEmail}`)
+    }
+
+
+
+    return(
+        <div className="submit-form">
+      <h1>
+        Contact Me
+      </h1>
+      <form className="form" onSubmit={handleFormSubmit}>
+        <h5>Name:</h5>
+        <input
+          value={insertName}
+          name="insertName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Enter Name"
+        />
+        <h5>Email:</h5>
+        <input
+          value={insertEmail}
+          name="insertEmail"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="Enter Email"
+        />
+        <button className="submit-btn" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
     )
 }
 
