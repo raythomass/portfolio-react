@@ -97,3 +97,29 @@
 .img-container:hover .overlay {
   opacity: 1;
 }
+
+
+/* ------  ABOUT ------ */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.form input {
+  padding: 5px;
+  width: 25%;
+}
+
+.submit-btn {
+  width: 15%;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgba(100, 166, 168,0.4);
+  border-color: rgb(69, 122, 123);
+  text-decoration: none;
+}
