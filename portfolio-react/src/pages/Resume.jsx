@@ -1,8 +1,13 @@
+import PDFComp from "../PDFComp";
+
 function Resume() {
     return(
-        <projects>
+        <resume className="">
             <h1>Resume Page</h1>
-        </projects>
+            <div className="d-flex justify-content-center">
+                <PDFComp/>
+            </div>
+        </resume>
     )
 }
 
