@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 function Nav() {
     return (
         <nav>
-            <ul className="navigation list-unstyled md">
+            <ul className="navigation">
+                <li>
+                    <Link to='/' >Home</Link>
+                </li>
                 <li>
                     <Link to='/about' >About</Link>
                 </li>
                 <li>
                     <Link to='/projects' >Projects</Link>
-                </li>
-                <li>
-                    <Link to='/' >RAY THOMAS</Link>
                 </li>
                 <li>
                     <Link to='/contact' >Contact</Link>
